@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Création des formulaires</title>
+</head>
+<body>
+  <h1>Création des formulaires</h1>
+  <form method="get" action="page_cible.html">
+    <label for="identifiant">Identifiant :</label>
+    <input type="text" id="identifiant" name="identifiant" autofocus><br>
+
+    <label for="mot_de_passe">Mot de passe :</label>
+    <input type="password" id="mot_de_passe" name="mot_de_passe"><br>
+
+    <input type="hidden" name="operations" value="valeur_cachée">
+
+    <label for="telephone">Numéro de téléphone :</label>
+    <input type="tel" id="telephone" name="telephone" pattern="[9][0-9]{8}" title="Le numéro de téléphone doit commencer par 9 et être suivi de 8 autres chiffres de 0 à 9" required><br>
+
+    <button type="button" onclick="window.location.href='pdf'">Télécharger les fichiers</button>
+    <button type="submit">Envoyer</button>
+  </form>
+</body>
+</html>

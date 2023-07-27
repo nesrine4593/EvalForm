@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulaire</title>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>Vos coordonnées</legend>
+
+      <label for="nom">Nom: </label>
+            <input type="text" id="nom" name="nom" placeholder="votre nom" required><br><br>
+      <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" placeholder="votre prénom" required><br><br>
+      <label for="date_naissance">Date de naissance:</label>
+            <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+      <label for="mail">Mail:</label>
+            <input type="email" id="mail" name="mail" placeholder="votre mail" required><br><br>
+      <label for="site">Votre site:</label>
+            <input type="url" id="site" name="site" placeholder="Nom du site"><br><br>
+      <label for="code">Code:</label>
+            <input type="text" id="code" name="code"><br><br>
+      <label>Genre:</label>
+            <input type="radio" id="homme" name="genre" value="homme" required>
+      <label for="homme">Homme</label>
+            <input type="radio" id="femme" name="genre" value="femme" required>
+      <label for="femme">Femme</label><br><br>
+      <label for="pays">Pays:</label>
+                 <select id="pays" name="pays" required>
+                         <option value="">Votre pays</option>
+                <optgroup label="Europe">
+                        <option value="France">France</option>
+                        <option value="Espagne">Espagne</option>
+                        <option value="Italie">Italie</option>
+                </optgroup>
+                <optgroup label="Maghreb">
+                        <option value="Algerie">Algerie</option>
+                        <option value="Maroc">Maroc</option>
+                        <option value="Tunisie">Tunisie</option>
+                </optgroup>
+                </select><br>
+				</fieldset><br>
+    <fieldset>
+      <legend>Vos gout</legend>
+
+      <input type="checkbox" id="tarte_fraises" name="gouts[]" value="Tarte aux fraises à la crème d'amandes">
+      <label for="tarte_fraises">Tarte aux fraises à la crème d'amandes</label><br>
+
+      <input type="checkbox" id="tarte_prunes" name="gouts[]" value="Tarte aux prunes">
+      <label for="tarte_prunes">Tarte aux prunes</label><br>
+
+      <input type="checkbox" id="tarte_mirabelles" name="gouts[]" value="Tarte rustique aux mirabelles de Lorraine, noisettes et miel">
+      <label for="tarte_mirabelles">Tarte rustique aux mirabelles de Lorraine, noisettes et miel</label><br>
+
+      <label for="description">Décrivez vos goûts en détail:</label><br>
+      <textarea id="description" name="description" rows="4" cols="50" placeholder="Saisissez votre description ici"></textarea><br>
+	  </fieldset>
+	  <fieldset>
+	  <legend>Envoyer nous votre photo</legend>
+	      
+ <label for="photo"></label><br>
+      <input type="file" id="photo" name="photo"><br>
+	  <button type="submit">Envoyer</button>
+	  <button type="reset">effacer</button>
+  </form>
+</body>
+</html>
+
+

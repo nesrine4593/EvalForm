@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creation des formulaires</title>
+</head>
+<body>
+<form>
+
+<fieldset><legend>Formulaire d'inscription</legend>
+
+<tr>
+           <td>nom</td>
+           <td><input type="texte"></td>
+       </tr>
+        <tr><br>
+           <td>prenom</td>
+           <td><input type="texte"></td>
+       </tr> 
+        <tr><br>
+           <td>mail</td>
+           <td><input type="email" id="email" pattern=".+@globex.com" size="30" required></td>
+       </tr><br>
+       <tr><td>genre
+        <input type="radio" id="homme" name="genre" value="homme" required>
+      <label for="homme">Homme</label>
+            <input type="radio" id="femme" name="genre" value="femme" required>
+      <label for="femme">Femme</label>
+       </td>
+       </tr><br>
+       <tr><td>photo
+       <input type="file">
+       </td></tr>
+
+<br>
+
+ <label for="pays"> Pays</label>
+ <select id="pays" name="pays" required>
+<br>
+                         <option value="">Votre pays</option>
+                         <option value="France">France</option>
+                         <option value="Espagne">Espagne</option>
+                         <option value="Italie">Italie</option>
+             
+                
+                </select><br>
+<br>
+
+<select id="langage" name="langage" required multiple >
+
+                        <option value="java">Java</option>
+                        <option value="c">c</option>
+                        <option value="c++">c++</option>
+						 <option value="php">php</option>
+</select><br><br>
+  <input type="checkbox" id="informatique" name="plateforme" value="informatique">
+    <label for="informatique">Informatique</label>
+    
+    <input type="checkbox" id="gestion" name="plateforme" value="gestion">
+    <label for="gestion">gestion</label>
+	
+    <input type="checkbox" id="pedagogie" name="plateforme" value="Pédagogie">
+    <label for="pedagogie">pedagogie</label><br><br>
+    <button type="submit">soumettre le formulaire</button>
+	<button type="reset">effacer</button>
+	</fieldset>
+</body>
+	</html>
